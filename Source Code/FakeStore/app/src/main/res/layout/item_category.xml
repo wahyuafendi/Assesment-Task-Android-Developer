@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:background="@drawable/bg_category_button"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp" />
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp"
+            android:src="@drawable/fakestore">
+
+        </ImageView>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/rl_fieled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/interbold"
+                android:text="Username"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/id"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="11dp"
+                android:hint="Enter your username!"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/intermedium"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:textColor="#000000"
+                android:textColorHint="#AAAAAA" />
+
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:fontFamily="@font/interbold"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@+id/et_nip"
+                android:textSize="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/password"
+                app:hintEnabled="false"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:endIconMode="password_toggle"
+                app:passwordToggleTint="#AAAAAA"
+                android:id="@+id/pwpw">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/password"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Enter your Password!"
+                    android:background="@drawable/btn_custom"
+                    android:fontFamily="@font/intermedium"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#AAAAAA" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/ln"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_custom_hint"
+        android:fontFamily="@font/intermedium"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
